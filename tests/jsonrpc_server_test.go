@@ -2,7 +2,7 @@ package tests
 
 import (
 	"github.com/bitly/go-simplejson"
-	jsonserver "github.com/last911/tools/server"
+	jsonserver "github.com/luoxiandong/tools/server"
 	"io/ioutil"
 	"net/http"
 	"testing"

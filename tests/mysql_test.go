@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	_ "github.com/go-sql-driver/mysql"
 	// "github.com/last911/tools"
-	"github.com/last911/tools/db"
+	"github.com/luoxiandong/tools/db"
 	"testing"
 	"time"
 )

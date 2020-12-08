@@ -3,7 +3,7 @@ package tests
 import (
 	"github.com/bitly/go-simplejson"
 	"github.com/gin-gonic/gin"
-	"github.com/last911/tools/server"
+	"github.com/luoxiandong/tools/server"
 	"io/ioutil"
 	"net/http"
 	"testing"

@@ -1,7 +1,7 @@
 package tests
 
 import (
-	"github.com/last911/tools/cache"
+	"github.com/luoxiandong/tools/cache"
 	"testing"
 )
 

@@ -1,7 +1,7 @@
 package tests
 
 import (
-	"github.com/last911/tools/log"
+	"github.com/luoxiandong/tools/log"
 	"testing"
 )
 

@@ -1,7 +1,7 @@
 package tests
 
 import (
-	"github.com/last911/tools"
+	"github.com/luoxiandong/tools"
 	"hash/crc32"
 	"strconv"
 	"testing"
@@ -41,10 +41,10 @@ func TestRangeArray(t *testing.T) {
 		t.Log(v)
 	}
 }
-func TestAuthcode(t *testing.T) {
+func Test_Authcode(t *testing.T) {
 	now := time.Now().UnixNano()
-	nn := string(now)
-	n, err := tools.Authcode(nn, true, "abc")
+	nn := strconv.FormatInt(now, 10)
+	n, err := tools.Authcode(nn, tools.ENCODE, "abc")
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -52,7 +52,7 @@ func TestAuthcode(t *testing.T) {
 	t.Log("raw:", nn)
 	// n := utils.Authcode(nn, true, "abc4sd")
 	t.Log("authcode:", n)
-	x, err := tools.Authcode(n, false, "abc")
+	x, err := tools.Authcode(n, tools.DECODE, "abc")
 	if err != nil {
 		t.Fatal(err)
 	}
